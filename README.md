@@ -25,6 +25,8 @@ interface GetCarApiResponseData {
 ### Create an ui adapter class that implements this interface and then extend AbstractUiAdapter. It accepts as generic the interface for api response data.
 
 ```typescript
+import { AbstractUiAdapter } from 'simple-abstract-ui-data-adapter';
+
 class CarUiAdapter
 extends AbstractUiAdapter<GetCarApiResponseData>
 implements CarUiInterface

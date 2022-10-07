@@ -1,6 +1,6 @@
 {
   "name": "simple-abstract-ui-data-adapter",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "description": "This is a simple abstract ui data adapter that will help you separate api data from ui data following aspect-oriented programming approach.",
   "homepage": "https://github.com/zenstok/simple-abstract-ui-data-adapter/#readme",
   "url": "https://github.com/zenstok/simple-abstract-ui-data-adapter/issues",
