@@ -43,7 +43,7 @@ implements CarUiInterface
         this.id = apiData.id.toString();
         this.brand = apiData.charAt(0).toUpperCase() + apiData.slice(1); // pretend you need brand string capitalized
         this.model = apiData.model;
-        this.launchDate = new Date(apiData.launchDate);
+        this.launchDate = new Date(apiData.launch_date);
     }
     
     protected applyRuntimeValidations() {
@@ -102,6 +102,6 @@ protected applyAttributes(apiData: GetCarApiResponseData): void {
     const brandAndModel = apiData.brandWithModel.split(" ");
     this.brand = brandAndModel[0].charAt(0).toUpperCase() + apiData.slice(1);
     this.model = brandAndModel[1];
-    this.launchDate = new Date(apiData.launchDate);
+    this.launchDate = new Date(apiData.launch_date);
 }
 ```

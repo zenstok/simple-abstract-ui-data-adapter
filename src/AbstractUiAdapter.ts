@@ -1,6 +1,6 @@
 /* eslint-disable @typescript-eslint/no-empty-function, @typescript-eslint/ban-ts-comment */
 abstract class AbstractUiAdapter<ApiDataModel> {
-  public async construct(apiData: ApiDataModel): Promise<this> {
+  private async construct(apiData: ApiDataModel): Promise<this> {
     await this.onBeforeAttributes(apiData);
     this.applyAttributes(apiData);
     this.applyRuntimeValidations();
