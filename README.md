@@ -1,5 +1,12 @@
 ### This is a simple abstract ui data adapter that will help you separate api data from ui data following [aspect-oriented programming approach](https://en.wikipedia.org/wiki/Aspect-oriented_programming).
 
+### Installation
+
+```bash
+npm install simple-abstract-ui-data-adapter
+# or
+yarn add simple-abstract-ui-data-adapter
+```
 
 ### Define your ui interface:
 
