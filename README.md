@@ -1,4 +1,4 @@
-### This is a simple abstract ui data adapter that will help you separate api data from ui data following [aspect-oriented programming approach](https://en.wikipedia.org/wiki/Aspect-oriented_programming).
+### This is a simple abstract ui data adapter that will help you separate api data from ui data.
 
 ### Installation
 
