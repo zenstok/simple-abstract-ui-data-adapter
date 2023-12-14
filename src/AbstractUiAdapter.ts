@@ -1,25 +1,19 @@
-/* eslint-disable @typescript-eslint/no-empty-function, @typescript-eslint/ban-ts-comment */
+/* eslint-disable @typescript-eslint/ban-ts-comment */
 abstract class AbstractUiAdapter<ApiDataModel> {
-  private async construct(apiData: ApiDataModel): Promise<this> {
-    await this.onBeforeAttributes(apiData);
+  private construct(apiData: ApiDataModel): this {
     this.applyAttributes(apiData);
     this.applyRuntimeValidations();
-    await this.onAfterAttributes();
 
     return this;
   }
-
-  protected async onBeforeAttributes(apiData: ApiDataModel): Promise<void> {}
 
   protected abstract applyAttributes(apiData: ApiDataModel): void;
 
   protected applyRuntimeValidations(): void {}
 
-  protected async onAfterAttributes(): Promise<void> {}
-
-  public static async create<ApiDataModel, UiDataModel>(
+  public static create<ApiDataModel, UiDataModel>(
     apiData: ApiDataModel
-  ): Promise<UiDataModel> {
+  ): UiDataModel {
     if (this.name === 'AbstractUiAdapter') {
       throw new Error('You cannot use AbstractUiAdapter class!');
     }

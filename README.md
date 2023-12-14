@@ -58,15 +58,6 @@ implements CarUiInterface
             throw new Error('Invalid date string received from api!');
         }
     }
-    
-    protected onBeforeAttributes(apiData: GetCarApiResponseData): Promise<void> {
-        // hook to apply extra logic if needed (not required to be extended)
-    }
-    
-    protected async onAfterAttributes(): Promise<void> {
-        // hook to apply extra logic if needed (not required to be extended)
-        // here you have access to defined attributes using this
-    }
 }
 ```
 
@@ -87,7 +78,7 @@ export class CarUiHelper {
 
 ### Simple usage:
 ```typescript
-const carModel = await CarUiHelper.getUiModel(apiData);
+const carModel = CarUiHelper.getUiModel(apiData);
 ```
 
 Now let's pretend your api structure changed, or you use a new API with a completely different structure. The only place in your app where you will need to make changes is
