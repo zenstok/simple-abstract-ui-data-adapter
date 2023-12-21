@@ -70,7 +70,7 @@ const carModel = await CarUiAdapter.create<GetCarApiResponseData, CarUiInterface
 ### Reduce boilerplate using a helper like this:
 ```typescript
 export class CarUiHelper {
-    public static async getUiModel(apiData: GetCarApiResponseData): Promise<CarUiInterface> {
+    public static async getUiModel(apiData: GetCarApiResponseData): CarUiInterface {
         return CarUiAdapter.create<GetCarApiResponseData, CarUiInterface>(apiData);
     }
 }

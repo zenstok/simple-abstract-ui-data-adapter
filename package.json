@@ -1,6 +1,6 @@
 {
   "name": "simple-abstract-ui-data-adapter",
-  "version": "3.0.0",
+  "version": "3.0.1",
   "description": "This is a simple abstract ui data adapter that will help you separate api data from ui data.",
   "homepage": "https://github.com/zenstok/simple-abstract-ui-data-adapter/#readme",
   "url": "https://github.com/zenstok/simple-abstract-ui-data-adapter/issues",
